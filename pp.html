@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<link rel="icon" type="image/x-icon" href="new.png">
+    <title>Bappi - Portfolio all projects</title>
+    <meta name="description" content="Explore all my projects here! You can view live demos, download the source code, and even purchase them easily." />
+    <meta name="keywords" content="Bappi, Bappi portfolio, web development, web development projects, creative solutions, exclusive content, source code download, buy website projects, HTML CSS JavaScript php mysql projects, frontend developer, backend developer, full stack developer, website design, PWA developer, custom web applications" />
+    <meta name="author" content="Bappi" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#159957" />
+    <meta name="og:title" content="Bappi - Portfolio Website" />
+    <meta name="og:description" content="Explore all my projects here! You can view live demos, download the source code, and even purchase them easily." />
+    <meta name="og:image" content="new.png" />
+    <meta name="og:url" content="https://bappi5.netlify.app/" />
+    <meta name="og:site_name" content="Bappi - Portfolio Website" />
+    <meta name="og:type" content="website" />
+    <meta name="og:locale" content="en_US" />
+    <meta name="og:image:width" content="1200" />
+    <meta name="og:image:height" content="630" />   
+    <meta name="og:image:alt" content="Bappi - Portfolio Website" />
+    <meta name="og:image:type" content="image/png" />
+    <meta name="og:image:width" content="1200" />
+    <meta name="og:image:height" content="630" />
+    <meta name="og:image:alt" content="Bappi - Portfolio Website" />
+    <meta name="og:image:type" content="image/png" />   
+
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="canonical" href="https://bappi5.netlify.app/" />
+    <link rel="alternate" href="https://bappi5.netlify.app/" hreflang="x-default" />
+    <link rel="alternate" href="https://bappi5.netlify.app/" hreflang="en" />
+    <link rel="alternate" href="https://bappi5.netlify.app/" hreflang="en-us" />
+    <link rel="alternate" href="https://bappi5.netlify.app/" hreflang="en-gb" />
+    <link rel="alternate" href="https://bappi5.netlify.app/" hreflang="en-au" />
+    <link rel="alternate" href="https://bappi5.netlify.app/" hreflang="en-ca" />
+    <link rel="alternate" href="https://bappi5.netlify.app/" hreflang="en-BD" />
+    <link rel="alternate" href="https://bappi5.netlify.app/" hreflang="en-in" />
+    <link rel="alternate" href="https://bappi5.netlify.app/" hreflang="en-pk" />
+    <link rel="alternate" href="https://bappi5.netlify.app/" hreflang="en-sa" />
+    <link rel="alternate" href="https://bappi5.netlify.app/" hreflang="en-ae" />
+    <link rel="alternate" href="https://bappi5.netlify.app/" hreflang="en-qa" />
+    <link rel="alternate" href="https://bappi5.netlify.app/" hreflang="en-kw" />
+    
+    <meta name="google-site-verification" content="dTSd87aOzo0dCrm3G3LCUukEVYOgug1r4IP28cTAroA" />
+    <style>
+			   html, body {
+  overflow-y: scroll; /* Allow scrolling */
+  scrollbar-width: none; /* For Firefox */
+}
+
+html::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Edge */
+  overflow: hidden; /* Hides both vertical and horizontal scrollbars */
+}
+/* Hide scrollbar for all elements while maintaining scroll functionality */
+* {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+*::-webkit-scrollbar {
+  display: none;
+}
+/* Remove tap highlight on mobile devices */
+* {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+/* For specific containers that need scroll but hidden scrollbar */
+.scrollable-content {
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollable-content::-webkit-scrollbar {
+  display: none;
+}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #2c3e50;
+            padding: 10px 0;
+            margin-bottom: 30px;
+        }
+
+       .search-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+            transition: all 0.3s ease;
+        }
+
+        /* Add styles for fixed search bar */
+        .search-container.fixed {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            max-width: 100%;
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 100;
+            margin: 0;
+        }
+
+        .search-container.fixed .search-bar {
+            max-width: 600px;
+            margin: 0 auto;
+            border-color: #159957;
+            padding-left: 15px; /* Adjust padding since icon is hidden */
+        }
+
+        .search-container.fixed .search-icon {
+            color: #159957;
+        }
+
+        /* Hide search icon when container is fixed */
+        .search-container.fixed .search-icon {
+            display: none;
+        }
+
+        /* Add padding to body when search is fixed to prevent content jump */
+        body.fixed-search {
+            padding-top: 70px;
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #2c3e50;
+            font-size: 16px;
+        }
+
+        .search-bar {
+            width: 100%;
+            padding: 12px 12px 12px 45px;
+            border: 2px solid #2c3e50;
+            border-radius: 25px;
+            font-size: 16px;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        .search-bar:focus {
+            border-color: #3498db;
+            box-shadow: 0 0 10px rgba(52, 152, 219, 0.3);
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+            padding: 20px;
+        }
+
+        .portfolio-item {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+
+        .portfolio-image {
+            width: 100%;
+            height: 200px;
+            background: #ddd;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .portfolio-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .portfolio-content {
+            padding: 20px;
+        }
+
+        .portfolio-title {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+
+        .portfolio-description {
+            color: #666;
+            margin-bottom: 15px;
+            font-size: 0.9em;
+        }
+
+        .portfolio-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 15px;
+        }
+
+        .tag {
+            background: #e1f5fe;
+            color: #0288d1;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 0.8em;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 10px;
+        }
+
+        .btn {
+            flex: 1;
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9em;
+            transition: all 0.3s ease;
+        }
+
+        .btn-preview {
+            background: #2196f3;
+            color: white;
+        }
+
+        .btn-buy {
+            background: linear-gradient(135deg,#159957, #155799);
+            color: white;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+            transform: scale(1.05);
+        }
+
+        .filters {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 8px 15px;
+            border: none;
+            border-radius: 20px;
+            background: #2c3e50;
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .filter-btn:hover {
+            background: #3498db;
+        }
+
+        .filter-btn.active {
+            background: linear-gradient(135deg,#159957, #155799);
+        }
+
+        /* Skeleton loader styles */
+        @keyframes skeleton-loading {
+          0% {
+            background-position: -200px 0;
+          }
+          100% {
+            background-position: 200px 0;
+          }
+        }
+
+        .skeleton-loader {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: #ffffff;
+          z-index: 9999;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          opacity: 1;
+          transition: opacity 0.5s ease;
+        }
+
+        .skeleton-loader.hidden {
+          opacity: 0;
+          pointer-events: none;
+        }
+
+        .skeleton-container {
+          width: 95%;
+          max-width: 1200px;
+        }
+
+        .skeleton-header {
+          height: 60px;
+          margin-bottom: 30px;
+          border-radius: 4px;
+          background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+          background-size: 200px 100%;
+          animation: skeleton-loading 1.5s infinite linear;
+        }
+
+        .skeleton-search {
+          height: 45px;
+          width: 80%;
+          max-width: 600px;
+          margin: 0 auto 30px auto;
+          border-radius: 25px;
+          background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+          background-size: 200px 100%;
+          animation: skeleton-loading 1.5s infinite linear;
+        }
+
+        .skeleton-filters {
+          display: flex;
+          justify-content: center;
+          gap: 15px;
+          margin-bottom: 30px;
+        }
+
+        .skeleton-filter {
+          height: 35px;
+          width: 80px;
+          border-radius: 20px;
+          background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+          background-size: 200px 100%;
+          animation: skeleton-loading 1.5s infinite linear;
+        }
+
+        .skeleton-projects {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+          gap: 25px;
+        }
+
+        .skeleton-project {
+          height: 300px;
+          border-radius: 10px;
+          background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+          background-size: 200px 100%;
+          animation: skeleton-loading 1.5s infinite linear;
+        }
+
+        .loading-spinner {
+          margin-top: 20px;
+          width: 80%;
+          height: 4px;
+          background-color: rgba(21, 153, 87, 0.2);
+          position: relative;
+          overflow: hidden;
+          border-radius: 4px;
+        }
+
+        .loading-spinner::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 40%;
+          background: linear-gradient(90deg, transparent, #159957, #155799, transparent);
+          animation: loading-line 1.5s infinite ease-in-out;
+        }
+
+        @keyframes loading-line {
+          0% {
+            left: -40%;
+          }
+          100% {
+            left: 100%;
+          }
+        }
+
+        .connection-message {
+          margin-top: 20px;
+          padding: 10px;
+          color: #666;
+          font-size: 14px;
+          text-align: center;
+          display: none;
+        }
+
+        .connection-message.show {
+          display: block;
+        }
+
+        @media (max-width: 768px) {
+            .portfolio-grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                gap: 30px;
+                padding: 0px;
+            }
+
+            .search-bar {
+                width: 100%;
+            }
+
+            .filter-btn {
+                padding: 6px 12px;
+                font-size: 0.9em;
+            }
+            
+            .skeleton-projects {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+
+            .search-container.fixed {
+                padding: 10px;
+            }
+            
+            .search-container.fixed .search-bar {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .skeleton-projects {
+                grid-template-columns: 1fr;
+            }
+        }
+		
+		      .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+
+       .modal-subtitle {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #e1e1e1;
+        }
+
+		.modal-tags {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 8px;
+			margin-bottom: 20px;
+			padding-bottom: 10px;
+			border-bottom: 1px solid #e1e1e1;
+			justify-content: center; /* Center horizontally */
+			align-items: center;    /* Center vertically */
+		}
+
+        .modal-tag {
+            background: #e1f5fe;
+            color: #0288d1;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 0.8em;
+        }
+
+        .modal-content {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 400px;
+            width: 90%;
+            position: relative;
+            animation: modalSlideIn 0.3s ease;
+        }
+
+        @keyframes modalSlideIn {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 30px;
+            cursor: pointer;
+            color: #666;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+        }
+
+        .contact-item i {
+            margin-right: 15px;
+            background: linear-gradient(135deg, #159957, #155799);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+            width: 20px;
+        }
+
+        .contact-item a {
+            color: #2c3e50;
+            text-decoration: none;
+        }
+
+        .contact-item a:hover {
+            color: #2196f3;
+        }
+
+        .modal-title {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e1e1e1;
+        }
+		
+		 /* Added new styles for preview modal */
+        .preview-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .preview-content {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 800px;
+            width: 90%;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: relative;
+        }
+
+        .preview-close {
+            position: fixed;
+            top: -5px;
+            right: 10px;
+            font-size: 50px;
+            cursor: pointer;
+            color: #fff;
+        }
+
+        .preview-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .preview-details {
+            margin-top: 20px;
+        }
+
+        .preview-title {
+            font-size: 24px;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        .preview-description {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .preview-features {
+            margin: 20px 0;
+        }
+
+        .preview-features h3 {
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+
+        .preview-features ul {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+
+        .preview-features li {
+            margin-bottom: 8px;
+            position: relative;
+        }
+
+        .preview-features li:before {
+            content: "•";
+            color: #2196f3;
+            font-weight: bold;
+            position: absolute;
+            left: -15px;
+        }
+		        /* Add this to your existing styles */
+        .home-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: linear-gradient(135deg, #159957, #155799);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            border: none;
+            z-index: 999;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .home-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .home-button i {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="skeleton-loader">
+      <div class="skeleton-container">
+        <!-- Header skeleton -->
+        <div class="skeleton-header"></div>
+        
+        <!-- Search bar skeleton -->
+        <div class="skeleton-search"></div>
+        
+        <!-- Filters skeleton -->
+        <div class="skeleton-filters">
+          <div class="skeleton-filter"></div>
+          <div class="skeleton-filter"></div>
+          <div class="skeleton-filter"></div>
+          <div class="skeleton-filter"></div>
+        </div>
+        
+        <!-- Projects grid skeleton -->
+        <div class="skeleton-projects">
+          <div class="skeleton-project"></div>
+          <div class="skeleton-project"></div>
+          <div class="skeleton-project"></div>
+          <div class="skeleton-project"></div>
+          <div class="skeleton-project"></div>
+          <div class="skeleton-project"></div>
+        </div>
+      </div>
+      <div class="loading-spinner"></div>
+      <div class="connection-message">Slow internet connection detected. Please wait...</div>
+    </div>
+
+    <header>
+        <div class="container">
+           <div class="search-container">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" class="search-bar" placeholder="Search projects..." id="searchInput">
+            </div>
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all"><i class="fa fa-list-alt"></i> All</button>
+                <button class="filter-btn" data-filter="web"><i class='fas fa-desktop'></i> Web</button>
+                <button class="filter-btn" data-filter="mobile"><i class="fas fa-mobile-phone"></i> Mobile</button>
+                <button class="filter-btn" data-filter="design"><i class='fa fa-magic'></i> Design</button>
+            </div>
+        </div>
+    </header>
+    <button onclick="window.location.href='index.html'" class="home-button">
+        <i class="fas fa-home"></i>
+    </button>
+    <main class="container">
+        <div class="portfolio-grid" id="portfolioGrid">
+            <!-- Portfolio items will be dynamically added here -->
+        </div>
+    </main>
+
+   <div class="preview-modal" id="previewModal">
+        <div class="preview-content">
+            <span class="preview-close">&times;</span>
+            <div id="previewDetails"></div>
+        </div>
+    </div>
+
+    <!-- Contact Modal -->
+    <div class="modal" id="contactModal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2 class="modal-title">Contract to buy code</h2>
+            <div class="modal-subtitle" id="selectedProject"></div>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+8801730183597">+880 1730183597</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:tunetor22@gmail.com">tunetor22@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <a href="https://www.linkedin.com/in/bappi-bhadro-650263321/" target="_blank">linkedin.com/bappi-bhadro</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-twitter"></i>
+                    <a href="https://x.com/simple_xi6" target="_blank">X.com/bappi-bhadro</a>
+                </div>
+            </div><br/>
+			<div class="modal-tags" id="selectedTags"></div>
+        </div>
+    </div>
+
+    <script>
+        // Add skeleton loader handling
+        document.addEventListener('DOMContentLoaded', () => {
+            const skeletonLoader = document.querySelector('.skeleton-loader');
+            const connectionMessage = document.querySelector('.connection-message');
+            const searchContainer = document.querySelector('.search-container');
+            let searchBarOffsetTop;
+            
+            // Get search bar position after everything is loaded
+            function updateSearchBarPosition() {
+                searchBarOffsetTop = searchContainer.getBoundingClientRect().top + window.scrollY;
+            }
+            
+            // Fixed search bar on scroll
+            window.addEventListener('scroll', () => {
+                if (searchBarOffsetTop && window.scrollY > searchBarOffsetTop) {
+                    searchContainer.classList.add('fixed');
+                    document.body.classList.add('fixed-search');
+                } else {
+                    searchContainer.classList.remove('fixed');
+                    document.body.classList.remove('fixed-search');
+                }
+            });
+            
+            // Check if the page is loaded
+            window.addEventListener('load', () => {
+                setTimeout(() => {
+                    skeletonLoader.classList.add('hidden');
+                    // Update search bar position after skeleton is hidden
+                    setTimeout(updateSearchBarPosition, 100);
+                }, 500);
+            });
+            
+            // Recalculate on resize
+            window.addEventListener('resize', updateSearchBarPosition);
+            
+            // Handle slow connection
+            const connectionTimeout = setTimeout(() => {
+                connectionMessage.classList.add('show');
+            }, 3000); // Show slow connection message after 3 seconds
+            
+            window.addEventListener('load', () => {
+                clearTimeout(connectionTimeout);
+            });
+            
+            // Listen for online/offline events
+            window.addEventListener('offline', () => {
+                skeletonLoader.classList.remove('hidden');
+                connectionMessage.textContent = 'Internet connection lost. Reconnecting...';
+                connectionMessage.classList.add('show');
+            });
+            
+            window.addEventListener('online', () => {
+                // If coming back online, allow some time for resources to load
+                connectionMessage.textContent = 'Internet connection restored. Loading...';
+                setTimeout(() => {
+                    skeletonLoader.classList.add('hidden');
+                }, 1500);
+            });
+        });
+
+        // Enhanced portfolio data with preview information
+        const portfolioItems = [
+    {
+        "id": 1,
+        "title": "Ress BD - E-commerce Platform",
+        "description": "A fully responsive e-commerce platform for seamless online shopping",
+        "image": "ecom.png",
+        "tags": ["web", "javascript", "react"],
+        "category": "web",
+        "previewDetails": {
+            "features": [
+                "Responsive design for all devices",
+                "Advanced shopping cart system",
+                "User authentication",
+                "Product filtering and search",
+                "Secure payment integration"
+            ],
+            "longDescription": "Ress BD is a modern e-commerce solution built with React and Node.js. It provides real-time inventory management, secure payment processing, and a powerful admin dashboard.",
+            "demoUrl": "https://ressbd.company.site/"
+        }
+    },
+    {
+        "id": 2,
+        "title": "LikeOp - Chat Application",
+        "description": "A real-time chat application with end-to-end encryption",
+        "image": "chat.png",
+        "tags": ["web", "chat", "nodejs"],
+        "category": "mobile",
+        "previewDetails": {
+            "features": [
+                "Instant messaging",
+                "End-to-end encryption",
+                "Group chat support",
+                "Voice & video calls",
+                "File sharing"
+            ],
+            "longDescription": "LikeOp is a fast and secure chat application built using WebSockets and Node.js. It offers encrypted messaging, file sharing, and real-time notifications.",
+            "demoUrl": "https://dev-pbuy.pantheonsite.io/"
+        }
+    },
+    {
+        "id": 3,
+        "title": "Oria - AI Chatbot",
+        "description": "An advanced AI chatbot built with NLP and deep learning",
+        "image": "bot.png",
+        "tags": ["AI", "chatbot", "JavaScript"],
+        "category": "web",
+        "previewDetails": {
+            "features": [
+                "Natural language processing",
+                "Context-aware responses",
+                "Multi-language support",
+                "Customizable chat interface",
+                "Integration with various platforms"
+            ],
+            "longDescription": "Oria is a powerful AI chatbot designed to understand natural language and provide intelligent responses. It supports multi-language conversation and can be integrated into websites and mobile apps.",
+            "demoUrl": "https://clory-oria.netlify.app/"
+        }
+    },
+    {
+        "id": 4,
+        "title": "Bailey - Text to Image Generator",
+        "description": "Generate high-quality images from text input using AI",
+        "image": "textai.png",
+        "tags": ["AI", "image-generation", "deep-learning"],
+        "category": "mobile",
+        "previewDetails": {
+            "features": [
+                "AI-powered image generation",
+                "High-resolution outputs",
+                "Customizable styles",
+                "Fast processing",
+                "Supports various image formats"
+            ],
+            "longDescription": "Bailey is an AI-driven text-to-image generator that converts textual descriptions into stunning images. Built with deep learning, it supports various artistic styles and resolutions.",
+            "demoUrl": "https://clory-bailey.netlify.app/"
+        }
+    },
+    {
+        "id": 5,
+        "title": "Lingo - Language Learning App",
+        "description": "A modern language learning platform with AI-driven lessons",
+        "image": "lingo.png",
+        "tags": ["education", "AI", "web"],
+        "category": "web",
+        "previewDetails": {
+            "features": [
+                "AI-powered language learning",
+                "Interactive exercises",
+                "Speech recognition",
+                "Multiple language support",
+                "Personalized learning paths"
+            ],
+            "longDescription": "Lingo is an AI-based language learning app that offers personalized lessons, speech recognition, and interactive exercises to help users master new languages effectively.",
+            "demoUrl": "https://clory-lingo.netlify.app/"
+        }
+    },
+    {
+        "id": 6,
+        "title": "Docket - To-Do App",
+        "description": "A simple and powerful to-do list app for task management",
+        "image": "todo.png",
+        "tags": ["productivity", "task-management", "Mobile"],
+        "category": "mobile",
+        "previewDetails": {
+            "features": [
+                "Task scheduling",
+                "Priority management",
+                "Reminders & notifications",
+                "Collaborative task sharing",
+                "Cross-device sync"
+            ],
+            "longDescription": "Docket is a minimal yet feature-rich to-do list app that helps users organize their tasks efficiently with reminders, prioritization, and collaboration tools.",
+            "demoUrl": "https://clory-docket.netlify.app/"
+        }
+    }, 
+	    {
+        "id": 7,
+        "title": "Raw FC - Football Club Website",
+        "description": "The official website of Raw FC with match updates, player stats, and news",
+        "image": "football.png",
+        "tags": ["football", "sports", "web"],
+        "category": "design",
+        "previewDetails": {
+            "features": [
+                "Live match updates",
+                "Player profiles and stats",
+                "Club history and achievements",
+                "Match highlights and videos",
+                "Ticket booking and fan zone"
+            ],
+            "longDescription": "Raw FC's official website provides real-time match updates, detailed player statistics, and exclusive behind-the-scenes content. Fans can book tickets, shop for merchandise, and stay connected with their favorite club.",
+            "demoUrl": "https://rawfc.netlify.app/"
+        }
+    },
+    {
+        "id": 8,
+        "title": "TechNova - Tech Blog & News",
+        "description": "Latest tech news, reviews, and tutorials",
+        "image": "blog.png",
+        "tags": ["technology", "blog", "news"],
+        "category": "design",
+        "previewDetails": {
+            "features": [
+                "Daily tech news updates",
+                "In-depth gadget reviews",
+                "Tech tutorials and how-tos",
+                "Discussion forums",
+                "Newsletter subscription"
+            ],
+            "longDescription": "TechNova is a leading tech blog covering the latest gadgets, software updates, AI advancements, and cybersecurity trends. It provides detailed reviews, tutorials, and discussion forums for tech enthusiasts.",
+            "demoUrl": "https://technova-demo.example.com"
+        }
+    },
+    {
+        "id": 9,
+        "title": "StreamWorld - Movie & Series Streaming",
+        "description": "A platform to stream movies, web series, and live TV",
+        "image": "movie.png",
+        "tags": ["streaming", "entertainment", "web"],
+        "category": "web",
+        "previewDetails": {
+            "features": [
+                "HD movie and series streaming",
+                "Live TV channels",
+                "Multi-device support",
+                "Personalized watchlists",
+                "Offline downloads"
+            ],
+            "longDescription": "StreamWorld is an entertainment platform that offers HD streaming of movies, web series, and live TV channels. Users can create watchlists, get personalized recommendations, and even download content for offline viewing.",
+            "demoUrl": "https://clory-mdb.netlify.app/"
+        }
+    },
+    {
+        "id": 10,
+        "title": "FitLife - Health & Fitness",
+        "description": "A complete fitness guide with workout plans and diet tracking",
+        "image": "fit.png",
+        "tags": ["health", "fitness", "web"],
+        "category": "design",
+        "previewDetails": {
+            "features": [
+                "Personalized workout plans",
+                "Diet and nutrition tracking",
+                "Live fitness classes",
+                "Progress tracking dashboard",
+                "Community support"
+            ],
+            "longDescription": "FitLife is an all-in-one health and fitness platform offering workout routines, diet tracking, and virtual coaching. Users can access personalized fitness plans and join live workout sessions.",
+            "demoUrl": "https://fitlife-demo.example.com"
+        }
+    },
+    {
+        "id": 11,
+        "title": "Tune Clips - Music website",
+        "description": "Music website with a clean and modern design",
+        "image": "tune.png",
+        "tags": ["music", "web"],
+        "category": "web",
+        "previewDetails": {
+            "features": [
+                "Music streaming",
+                "Social media integration"
+            ],
+            "longDescription": "Tune Clips is a music website with a clean and modern design. It offers a seamless music streaming experience with social media integration.",
+            "demoUrl": "https://tuneclips.netlify.app/"
+        }
+    }
+        ];
+
+        function createPortfolioItem(item) {
+            return `
+                <div class="portfolio-item" data-category="${item.category}">
+                    <div class="portfolio-image">
+                        <img src="${item.image}" alt="${item.title}">
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">${item.title}</h3>
+                        <p class="portfolio-description">${item.description}</p>
+                        <div class="portfolio-tags">
+                            ${item.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+                        </div>
+                        <div class="button-group">
+                            <button class="btn btn-preview" data-id="${item.id}">
+                                <i class="fas fa-eye"></i> Preview
+                            </button>
+                            <button class="btn btn-buy">
+                                <i class="fas fa-shopping-cart"></i> Buy Code
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function showPreview(item) {
+            const previewModal = document.getElementById('previewModal');
+            const previewDetails = document.getElementById('previewDetails');
+            
+            previewDetails.innerHTML = `
+                <img src="${item.image}" alt="${item.title}" class="preview-image">
+                <h2 class="preview-title">${item.title}</h2>
+                <p class="preview-description">${item.previewDetails.longDescription}</p>
+                <div class="preview-features">
+                    <h3>Key Features</h3>
+                    <ul>
+                        ${item.previewDetails.features.map(feature => `<li>${feature}</li>`).join('')}
+                    </ul>
+                </div>
+                <a href="${item.previewDetails.demoUrl}" target="_blank" class="btn btn-preview" style="display: inline-block; text-decoration: none; margin-top: 20px;">
+                    <i class="fas fa-external-link-alt"></i> View Live Demo
+                </a>
+            `;
+            
+            previewModal.style.display = 'flex';
+        }
+
+        // Function to render portfolio items
+        function renderPortfolioItems(items) {
+            const grid = document.getElementById('portfolioGrid');
+            grid.innerHTML = items.map(item => createPortfolioItem(item)).join('');
+        }
+
+        // Initial render
+        renderPortfolioItems(portfolioItems);
+
+        // Event Listeners
+        document.addEventListener('click', (e) => {
+            if (e.target.classList.contains('btn-preview') || e.target.parentElement.classList.contains('btn-preview')) {
+                const button = e.target.classList.contains('btn-preview') ? e.target : e.target.parentElement;
+                const itemId = parseInt(button.dataset.id);
+                const item = portfolioItems.find(item => item.id === itemId);
+                if (item) {
+                    showPreview(item);
+                }
+            } else if (e.target.classList.contains('btn-buy') || e.target.parentElement.classList.contains('btn-buy')) {
+                const portfolioItem = e.target.closest('.portfolio-item');
+                const title = portfolioItem.querySelector('.portfolio-title').textContent;
+                
+                // Get all tags from the portfolio item
+                const tags = Array.from(portfolioItem.querySelectorAll('.tag'))
+                    .map(tag => tag.textContent);
+                
+                // Update modal content
+                document.getElementById('selectedProject').textContent = `Selected Project: ${title}`;
+                document.getElementById('selectedTags').innerHTML = tags
+                    .map(tag => `<span class="modal-tag">${tag}</span>`)
+                    .join('');
+                
+                document.getElementById('contactModal').style.display = 'flex';
+            }
+        });
+
+
+        // Close modals
+        document.querySelectorAll('.preview-close, .modal-close').forEach(closeBtn => {
+            closeBtn.addEventListener('click', () => {
+                document.getElementById('previewModal').style.display = 'none';
+                document.getElementById('contactModal').style.display = 'none';
+            });
+        });
+
+        // Close modals when clicking outside
+        window.addEventListener('click', (e) => {
+            const previewModal = document.getElementById('previewModal');
+            const contactModal = document.getElementById('contactModal');
+            if (e.target === previewModal) {
+                previewModal.style.display = 'none';
+            }
+            if (e.target === contactModal) {
+                contactModal.style.display = 'none';
+            }
+        });
+
+        // Search functionality
+        const searchInput = document.getElementById('searchInput');
+        searchInput.addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase();
+            const filteredItems = portfolioItems.filter(item => 
+                item.title.toLowerCase().includes(searchTerm) ||
+                item.description.toLowerCase().includes(searchTerm) ||
+                item.tags.some(tag => tag.toLowerCase().includes(searchTerm))
+            );
+            renderPortfolioItems(filteredItems);
+        });
+
+        // Filter functionality
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                
+                const category = button.dataset.filter;
+                const filteredItems = category === 'all' 
+                    ? portfolioItems
+                    : portfolioItems.filter(item => item.category === category);
+                renderPortfolioItems(filteredItems);
+            });
+        });
+    </script>
+    
+    <script>
+      // Copy protection script
+      document.addEventListener('copy', function(e) {
+        e.clipboardData.setData('text/plain', 'It\'s illegal to copy content from this website');
+        e.preventDefault();
+      });
+    </script>
+</body>
+</html>
